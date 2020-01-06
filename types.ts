@@ -1,4 +1,4 @@
-type RequestTokenSuccess = (path: string, token: string) => Promise<void>
+type RequestTokenSuccess = (tokenPath: string, token: string) => Promise<void>
 
 type RequestTokenError = () => Promise<void>
 
