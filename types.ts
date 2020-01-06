@@ -1,8 +1,8 @@
-type RequestTokenSuccess<T> = (token: T) => Promise<void>
+type Success<S> = (s: S) => Promise<void>
 
-type RequestTokenError<T> = (error: T) => Promise<void>
+type VaultError<E> = (error: E) => Promise<void>
 
-type RequestToken = (url: string, success: RequestTokenSuccess<string>, error: RequestTokenError<string>) => Promise<void>
+type RequestToken<S extends Success<S>, E extends VaultError<E>> = (url: string, success: S, error: E) => Promise<void>
 
 type UploadFileSuccess<T> = (contents: T) => Promise<void>
 
