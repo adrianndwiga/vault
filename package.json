@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/adrianndwiga/vault/issues"
   },
-  "homepage": "https://github.com/adrianndwiga/vault#readme"
+  "homepage": "https://github.com/adrianndwiga/vault#readme",
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
 }
