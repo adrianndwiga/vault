@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:token-server": "tsc ./token-server/index.ts ./token-server/indexTests.ts",
+    "start:token-server": "npm run build:token-server && node ./token-server/index.js",
+    "test:token-server": "mocha ./token-server/indexTests.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +20,9 @@
   },
   "homepage": "https://github.com/adrianndwiga/vault#readme",
   "devDependencies": {
+    "@types/mocha": "^5.2.7",
     "@types/node": "^13.1.4",
+    "mocha": "^7.0.0",
     "typescript": "^3.7.4"
   },
   "dependencies": {}
