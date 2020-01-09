@@ -7,6 +7,8 @@
     "build:token-server": "tsc ./token-server/index.ts ./token-server/indexTests.ts",
     "start:token-server": "npm run build:token-server && node ./token-server/index.js",
     "test:token-server": "mocha ./token-server/indexTests.js",
+    "build:onedrive-live": "tsc ./onedrive-live/index.ts",
+    "start:onedrive-live": "npm run build:onedrive-live && node ./onedrive-live/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +27,7 @@
     "mocha": "^7.0.0",
     "typescript": "^3.7.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aws-sdk": "^2.600.0"
+  }
 }
