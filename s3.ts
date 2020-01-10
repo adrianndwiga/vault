@@ -29,7 +29,6 @@ export class AmazonS3 implements FileStore {
         return new Promise<void>((resolve, reject) => {
             readFile(filePath, (err, data) => {
                 if (err) throw err
-                // const uploadData = new Buffer(data, 'binary')
                 this.s3.upload({
                     Bucket: params.Bucket,
                     Key: params.Key,
