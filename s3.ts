@@ -43,13 +43,3 @@ export class AmazonS3 implements FileStore {
         })
     }
 }
-
-export async function createBucket(): Promise<void> {
-
-}
-
-export async function uploadFile(): Promise<void> {}
-
-export async function downloadFile(): Promise<void> {}
-
-
