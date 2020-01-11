@@ -1,16 +1,16 @@
 import * as AWS from 'aws-sdk'
 import { readFile, writeFile } from 'fs';
 
-interface FileParams {
+export interface FileParams {
 
 }
 
-interface FileStore {
+export interface FileStore {
     downloadFile(params: FileParams, filePath: string): Promise<void>
     uploadFile(params: FileParams, filePath: string): Promise<void>
 }
 
-interface CloudDirectory {
+export interface CloudDirectory {
     createDirectory(directoryName: string): Promise<void>
     deleteDirectory(directoryName: string): Promise<void>
 }
