@@ -1,4 +1,4 @@
-import { FileStore, CloudDirectory, FileParams } from "./s3";
+import { FileParams, FileStore, CloudDirectory } from "./types";
 
 interface AzureFileParams extends FileParams {
     id: string
